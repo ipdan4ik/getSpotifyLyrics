@@ -1,6 +1,7 @@
 import config
 
 def get_spotify_song(username):
+    """Return user`s current playing song on spotify"""
     import spotipy
     from spotipy.oauth2 import SpotifyOAuth
 
@@ -19,6 +20,7 @@ def get_spotify_song(username):
 
 
 def get_lyrics_vocadb(artist, name):
+    """Return song lyrics from vocadb"""
     import requests
     import json
 
@@ -42,6 +44,7 @@ def get_lyrics_vocadb(artist, name):
 
 
 def get_lyrics_genius(artist, name):
+    """Return song lyrics from genius"""
     import lyricsgenius
     genius = lyricsgenius.Genius(config.genius_token)
     genius.verbose = False
