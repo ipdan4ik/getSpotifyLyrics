@@ -3,6 +3,7 @@ Get lyrics of spotify current playing song.
 
 # Requirements
 * [python 3](https://www.python.org/downloads/)
+
 Install this through pip:
 * spotipy
 * lyricsgenius
